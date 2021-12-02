@@ -77,7 +77,7 @@ const loginUser = async (req = request, res = response) => {
          ok: true,
          uid: userDB.id,
          name: userDB.name,
-         email: dbUser,
+         email: userDB.email,
          token,
       });
    } catch (error) {
